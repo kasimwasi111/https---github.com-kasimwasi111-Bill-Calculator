@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Bill Splitter</h3>
+    </div>
+    <div class="logo">
+        <img src="https://img.icons8.com/ios/50/000000/invoice-1.png" height="200" width="200">
+    </div>
+    <div class="tipcal">
+        <div class="p1">
+            <label for="">Bill</label>
+            <input type="number" class="input bill-input" id="bill-input"><br>
+            <label for="">Select Tip %</label>
+            <div class="tip">
+                <div class="tips tip5">5%</div>
+                <div class="tips tip10">10%</div>
+                <div class="tips tip15 active-tip">15%</div>
+                <div class="tips tip25">25%</div>
+                <div class="tips tip50">50%</div>
+                <div id="tip-custom">
+                    <input type="number" class="tip-custom" placeholder="Custom">
+                </div>
+            </div>
+            <div class="peopleLable">
+                <label for="">Number of People</label>
+                <label for="" class="error"> Can't be zero</label>
+            </div>
+            <input type="number" class="input people-input">
+        </div>
+        <div class="result">
+            <div class="tip-amount">
+                <div class="text">
+                    <p>Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="tip-amount">₹4.27</div>
+            </div>
+            <div class="total">
+                <div class="text">
+                    <p>Total</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="total-amount">₹32.79</div>
+            </div>
+            <div class="reset">RESET</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
